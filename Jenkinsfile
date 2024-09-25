@@ -30,15 +30,15 @@ pipeline {
         }
         stage('Deploying the application') {
             steps {
-                sh 'npm run start & echo $! > app.pid &'
-                
+                // sh 'npm run start & echo $! > app.pid &'
+                sh 'npm run start
             }
         }
-        stage('Stop Application') {
-            steps {
-                 sh 'kill $(cat app.pid)'
-             }
-        }
+        // stage('Stop Application') {
+        //     steps {
+        //          sh 'kill $(cat app.pid)'
+        //      }
+        // }
     }
     post {
         always {
