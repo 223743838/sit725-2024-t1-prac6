@@ -4,6 +4,7 @@
   "description": "SIT 725 Prac 6",
   "main": "server.js",
   "scripts": {
+    "build": "webpack",
     "test": "mocha --reporter spec",
     "start": "node server.js"
   },
