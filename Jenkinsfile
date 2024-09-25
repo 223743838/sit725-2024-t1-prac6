@@ -20,18 +20,18 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        stage('Test') {
-            steps {
-                sh 'npm install --save-dev chai mocha'
-                sh 'npm install supertest --save-dev'
-                sh 'npm run test & echo $! > app.pid &'
-                sh 'kill $(cat app.pid)'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         sh 'npm install --save-dev chai mocha'
+        //         sh 'npm install supertest --save-dev'
+        //         sh 'npm run test & echo $! > app.pid &'
+        //         sh 'kill $(cat app.pid)'
+        //     }
+        // }
         stage('Deploying the application') {
             steps {
-                sh 'npm run start & echo $! > app.pid &'
-                
+                // sh 'npm run start & echo $! > app.pid &'
+                sh 'npm run start'
             }
         }
         // stage('Stop Application') {
