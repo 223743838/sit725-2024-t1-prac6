@@ -31,7 +31,7 @@ pipeline {
         stage('Deploying the application') {
             steps {
                 // sh 'npm run start & echo $! > app.pid &'
-                sh 'npm run start
+                sh 'npm run start'
             }
         }
         // stage('Stop Application') {
