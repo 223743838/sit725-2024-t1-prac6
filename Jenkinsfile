@@ -5,7 +5,7 @@ pipeline {
         stage('Source Code Management') {
             steps {
                 // Checking out the source code from GitHub
-                git branch: 'main', url: 'https://github.com/223743838/sit725-2024-t1-prac6.git'
+                git branch: 'main', url: 'https://github.com/rkolarkar/SIT753_6.2HD.git'
             }
         }
 
