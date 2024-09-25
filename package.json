@@ -19,6 +19,8 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
-    "chai-http": "^4.4.0"
-}
+    "chai-http": "^4.4.0",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
+  }
 }
