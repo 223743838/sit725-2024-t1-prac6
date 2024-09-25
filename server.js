@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/api', router); 
 
-var port = process.env.port || 3000;
+var port = process.env.port || 3001;
 console.log("App listening to: " + port);
 client.connect(err => {
     if (err) {
